@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Drawing App</title>
+    <!--Juqery Css-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!--Bootstrap Css file-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" SameSite="None">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <!--Developer Css-->
+    <link rel="stylesheet" href="styling.css" type="text/css">
+</head>
+
+<body>
+    <header class="pt-2">Drawing App</header>
+    <!--Colour Selector-->
+
+    <div class="inputcontainer">
+        <div class="input" id="inputcolor">
+            <input type="color" id="paintcolor" list>
+        </div>
+
+        <!--size of Brush-->
+        <div class="input" id="thicknessinput">
+            <div id="circle"></div>
+        </div>
+        <div class="input">
+            <!--We can create a slider using jquery-->
+            <div id="slider"></div>
+        </div>
+    </div>
+    <!--Canvas Container-->
+    <div id="container">
+        <canvas id="paint"></canvas>
+    </div>
+    <div class="d-inline-flex flex-row p-2 justify-content-around w-50" id="inputcontainer2">
+        <!--Erase-->
+        <div class="input2">
+            <a class="btn btn-primary" id="erase">Erase</a>
+        </div>
+        <div class="input2">
+            <a class="btn btn-primary" id="save">Save</a>
+        </div>
+        <div class="input2">
+            <a class="btn btn-primary" id="reset">Reset</a>
+        </div>
+    </div>
+    <!--Jquery Script file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Jquery UI-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!--Developer Js file-->
+    <script src="script.js"></script>
+</body>
+
+</html>
